@@ -175,12 +175,18 @@ for (var i = 0; i > 0; i++) {
 }
 ```
 
-##Control Flow Exercise: 
+## Control Flow Exercise: 
 - Write a for loop that will iterate from 0 to 20. 
 - For each iteration, it will check if the current number is even or odd, and report that to the screen (e.g. "2 is even").
 - Do this using a `FOR` and a `WHILE` loop.
 
-##JavaScript Objects
+## Game Lab: Memory
+- We will be developing the classic game of memory.
+- Download the project files [here](https://github.com/arsood/Memory).
+- You will be working on js/beginner.js. Your task is to look at the comments (in gray) and follow the instructions to complete the game.
+- When all steps are completed your game should run in the browser!
+
+## JavaScript Objects
 
 ####Object Notation
 
