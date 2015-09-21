@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tables Example</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container margin-top-20">
+	<div>
+		<select id="color-picker">
+			<option>Select a Color</option>
+			<option value="#3FB81D">Green</option>
+			<option value="#3C5DC9">Blue</option>
+			<option value="#F59B00">Orange</option>
+			<option value="#DDDDDD">Gray</option>
+		</select>
+	</div>
+
+	<table id="toggle-visibility" class="margin-top-20">
+		<tr>
+			<td>
+				Name
+				<input type="checkbox" value="Name" checked />
+			</td>
+			<td>
+				Year
+				<input type="checkbox" value="Year" checked />
+			</td>
+			<td>
+				Grapes
+				<input type="checkbox" value="Grapes" checked />
+			</td>
+			<td>
+				Country
+				<input type="checkbox" value="Country" checked />
+			</td>
+			<td>
+				Region
+				<input type="checkbox" value="Region" checked />
+			</td>
+			<td>
+				Price
+				<input type="checkbox" value="Price" checked />
+			</td>
+			<td>
+				Description
+				<input type="checkbox" value="Description" checked />
+			</td>
+			<td>
+				Picture
+				<input type="checkbox" value="Picture" checked />
+			</td>
+		</tr>
+	</table>
+
+	<div class="margin-top-20">
+		<a id="add-wine-button" href="#">Add new wine</a>
+	</div>
+
+	<form id="add-wine-form" class="margin-top-20 hide">
+		<table>
+			<tr>
+				<td>
+					<input type="text" placeholder="Name" />
+				</td>
+				<td>
+					<input type="text" placeholder="Year" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" placeholder="Grapes" />
+				</td>
+				<td>
+					<input type="text" placeholder="Country" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" placeholder="Region" />
+				</td>
+				<td>
+					<input type="text" placeholder="Price" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<textarea placeholder="Description"></textarea>
+				</td>
+				<td>
+					<input type="text" placeholder="Picture" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<button type="submit" id="submit-wine-button">Add Wine</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+
+	<table id="wine-list" class="margin-top-20">
+		<tr class="titles">
+			<td class="active">Name</td>
+			<td class="active">Year</td>
+			<td class="active">Grapes</td>
+			<td class="active">Country</td>
+			<td class="active">Region</td>
+			<td class="active">Price</td>
+			<td class="active">Description</td>
+			<td class="active">Picture</td>
+		</tr>
+		<tr>
+			<td>Arun's Wine</td>
+			<td>2015</td>
+			<td>Merlot</td>
+			<td>USA</td>
+			<td>California</td>
+			<td>25</td>
+			<td>This is Arun's Wine!</td>
+			<td>
+				<img src="http://s3-us-west-2.amazonaws.com/sandboxapi/saint_cosme.jpg" />
+			</td>
+		</tr>
+		<tr>
+			<td>Arun's Wine</td>
+			<td>2015</td>
+			<td>Merlot</td>
+			<td>USA</td>
+			<td>California</td>
+			<td>25</td>
+			<td>This is Arun's Wine!</td>
+			<td>
+				<img src="http://s3-us-west-2.amazonaws.com/sandboxapi/saint_cosme.jpg" />
+			</td>
+		</tr>
+	</table>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
