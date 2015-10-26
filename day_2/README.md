@@ -155,4 +155,4 @@ document.getElementById("my-input").value;
 - Step 3-4 Bonus: Reset the form after submitting. You will need to lookup the .reset() function.
 - Step 5: Activate the color picker. Upon selecting a value from the color picker list, change every other table row to that specific color.
 - Step 6 (Hard): Activate the checkboxes. When you turn one on and off it should toggle the class "active" on the appropriate column title on the table.
-- Step 6 Bonus: As a bonus, try hiding and showing the columns based on the text inside rather than assigning IDs or classes to them.
+- Step 6 Bonus: As a bonus, try activating the "active" class on the columns based on the text inside rather than assigning IDs or classes to them.
