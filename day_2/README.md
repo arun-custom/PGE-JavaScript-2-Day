@@ -82,15 +82,6 @@ Check if element already contains a class:
 div.classList.contains("foo");
 ```
 
-##DOM Manipulation Exercise: Shakespeare's Plays
-- Download the starter code files [here](shakespeares_plays/).
-- Add a class of `special` to all of the `<li>` elements at the second level of the nested list.
-- Add a class of `year` to all of the table cells in the third column of a table.
-	- Hint: Take a look at how many columns are in each table.
-- Make every other table row in both tables have a gray background.
-- Select an anchor tag that has a link to a pdf file. Change the color to blue and increase the font size.
-- Select an anchor tag that has an href attribute containing the substring "asyoulikeit" and change the font color to orange.
-
 ##Handling Events
 - There are many events you may want to respond to with JS including clicks, mouseovers, focuses, etc.
 - Events can be listened for and responded to using `addEventListener`.
@@ -140,6 +131,20 @@ document.getElementById("my-div").innerHTML = "<span>New HTML here</span>";
 	- Step 3: Bind a click event to the set score button and set the innerHTML of the score display to the score entered in the text box.
 	- **Bonus:** Create a check in your code to make sure the score will not go negative.
 	- **Super Bonus:** Create a function to make the changes to the score display rather than having to write your logic over and over.
+
+## Templating with JavaScript Lab
+- In this lab we will be using data returned from an API to add it to a HTML page.
+- We will be using the [omdbAPI](http://www.omdbapi.com/) to get movie data.
+- You will need to follow these steps:
+	- Step 1: Create a simple input with a submit button to search for a movie by title.
+	- Step 2: On click of the button, query the API with the title information.
+	- Step 3: Show the movie data on the page via a HTML table.
+
+HINT: To get text input that a user entered
+
+```javascript
+document.getElementById("my-input").value;
+```
 
 ## Manipulating Tables with JavaScript
 - In this section we will be working with a HTML document that has been already developed for you. You can find it [here](tables_example/).

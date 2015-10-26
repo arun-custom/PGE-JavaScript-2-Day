@@ -270,32 +270,47 @@ console.log(myCar.year);
 	- Cocoa
 
 ##AJAX
-- AJAX is a powerful way to create server requests and get responses without having to reload the page.
-- AJAX stands for Asynchronous JavaScript and XML.
-- Here is how it can be accomplished:
+- AJAX is a way to create requests to the server from the front-end without performing a page refresh.
+- It stands for Asynchronous JavaScript and XML.
+- AJAX can be used to make RESTful calls to APIs.
+- Let's look at a simple GET request:
 
 ```javascript
-function reqListener () {
+var oReq = new XMLHttpRequest();
+
+oReq.onload = function() {
 	console.log(this.responseText);
 }
 
-var oReq = new XMLHttpRequest();
-oReq.onload = reqListener;
-oReq.open("get", "[Endpoint Here]", true);
+oReq.open("get", "URL HERE", true);
 oReq.send();
 ```
 
-- XMLHttpRequest is an object that contains the methods to send AJAX requests.
-- The most important method here is `.open`, which takes three parameters:
-	- Type of request
-	- URL endpoint
-	- Asynchronous true or false
-- `.send` submits the request.
+- POST requests allow us to submit a packet of data to the server.
+- Let's see how the request changes:
+
+```javascript
+var oReq = new XMLHttpRequest();
+
+oReq.open('POST', 'URL HERE', true);
+
+oReq.setRequestHeader('Content-Type', 'application/json');
+
+var formInfo = {
+	firstname: "Arun",
+	lastname: "Sood",
+	age: 28,
+	username: "arsood"
+};
+
+oReq.send(JSON.stringify(formInfo));
+```
 
 ##AJAX Exercise
 - Let's make a request out to `http://daretodiscover.herokuapp.com/users`.
 - We can evaluate how we can get data into the console about each user.
 
 ##AJAX Lab
-- Make a GET request call out to `http://daretodiscover.herokuapp.com/wines`.
-- Take the returned data and create a simple HTML template to show the data for each wine.
+- Make a GET request call out to `http://daretodiscover.herokuapp.com/books`.
+- Take the returned data and create console.log statements for each piece in a human-readable format. Think "Title: 'The Great Gatsby'", "Author: 'F Scott Fitzgerald'"
+- Create a simple form that submits a POST request to add a new book.
